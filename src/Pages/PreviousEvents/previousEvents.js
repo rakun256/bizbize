@@ -1,9 +1,14 @@
 import React from 'react'
 import './previousEvents.css'
+import PreviousEventBox from './previousEventBox'
 
 const PreviousEvents = () => {
   return (
-    <div>previousEvents</div>
+    <div className='container'>
+      <PreviousEventBox/>
+      <PreviousEventBox/>
+      <PreviousEventBox/>
+    </div>
   )
 }
 
