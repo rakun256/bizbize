@@ -4,3 +4,9 @@
     flex-direction: column;
     background: #06032c;
 }
+
+@media only screen and (max-width: 768px) {
+    .App{
+        width: 100%;
+    }
+  }

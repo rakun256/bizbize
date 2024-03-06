@@ -30,7 +30,6 @@
 
 .main-title {
   color: white;
-
   font-size: 50px;
 }
 
@@ -56,13 +55,32 @@ button:hover {
 
 @media only screen and (max-width: 768px) {
   .page-cover{
-    background-image: none;
     display: flex;
     flex-direction: column;
   }
 
   .main-cover{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bizbize-logo{
+    width: 180px;
+    height: 180px;
+  }
+
+  .main-title{
+    font-size: 25px;
+  }
+
+  button{
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+  }
+  
+  .skylab-logo{
+    height: 50px;
   }
 }
