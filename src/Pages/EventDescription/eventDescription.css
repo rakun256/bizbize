@@ -1,0 +1,26 @@
+.description-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 25px;
+    text-align: justify;
+    padding: 80px;
+}
+
+.description-title{
+    font-size: 75px;
+    color: #27a68e;
+    border-right: #27a68e 1px solid;
+    padding: 100px;
+}
+
+.description-paragraph{
+    font-size: 25px;
+    color: #eadaff;
+}
+
+.description-right{
+    width: 750px;
+}

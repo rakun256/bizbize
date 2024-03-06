@@ -5,6 +5,7 @@ import NextEvent from "./Pages/NextEvent/nextEvent";
 import Navbar from "./Components/Navbar/navbar";
 import PreviousEvents from "./Pages/PreviousEvents/previousEvents";
 import OurTeam from "./Pages/EventTeam/eventTeam";
+import EventDescription from "./Pages/EventDescription/eventDescription";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <MainPage />
         <NextEvent />
+        <EventDescription />
         <PreviousEvents />
         <OurTeam />
       </div>
