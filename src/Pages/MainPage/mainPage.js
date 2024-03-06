@@ -9,7 +9,7 @@ const MainPage = () => {
 
         <div className="container">
           <h1 className="main-title">
-            Biz Bize İle <br/> Kariyerini Zirveye <br /> Taşımaya Hazır Mısın?
+            Biz Bize İle <br /> Kariyerini Zirveye <br /> Taşımaya Hazır Mısın?
           </h1>
           <button>Kayıt Ol!</button>
         </div>

@@ -52,3 +52,17 @@ button:hover {
 .skylab-logo{
     height: 75px;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .page-cover{
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-cover{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
