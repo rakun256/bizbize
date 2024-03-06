@@ -1,0 +1,46 @@
+.navbar-container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    left: 0;
+    color: #eadaff; /* Navbar metin rengi */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .navbar-container img {
+    width: 75px; /* Logo genişliği */
+    height: auto; /* Logo yüksekliği otomatik ayarlanacak */
+    cursor: pointer;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-right: 40px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #eadaff; /* Link metin rengi */
+    transition: color 0.3s ease; /* Renk geçişi efekti */
+    font-weight: 650;
+  }
+  
+  .links a:hover {
+    color: #27a68e; /* Link üzerine gelindiğinde renk */
+    cursor: pointer;
+  }
+  
+  .links a:active {
+    color: #27a68e; /* Link tıklandığında renk */
+  }
+  
+  

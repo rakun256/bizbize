@@ -1,0 +1,22 @@
+.previous-events{
+    padding: 25px;
+}
+
+.prevent-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.prevent-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #eadaff;
+    text-align: center;
+    border-bottom: #eadaff 1px solid;
+    width: max-content;
+    margin: auto;
+}
