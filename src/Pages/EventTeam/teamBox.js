@@ -14,8 +14,11 @@ const TeamMember = ({ member }) => {
           />
         </a>
       </div>
-      <h3 className="member-name">{member.firstName}  {member.lastName}</h3>
+      <div className='member-title-cover'>
+        <h3 className="member-name">{member.firstName}  {member.lastName}</h3>
       <p className="member-department">{member.department}</p>
+      </div>
+      
     </div>
   );
 };
