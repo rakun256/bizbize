@@ -1,5 +1,6 @@
 import React from "react";
 import "./mainPage.css";
+import Button from "../../Components/Button/button";
 
 const MainPage = () => {
   return (
@@ -11,7 +12,7 @@ const MainPage = () => {
           <h1 className="main-title">
             Biz Bize İle <br /> Kariyerini Zirveye <br /> Taşımaya Hazır Mısın?
           </h1>
-          <button>Kayıt Ol!</button>
+          <Button/>
         </div>
       </div>
       <img className="skylab-logo" src={"Images/skylab1.png"} alt="logo" />

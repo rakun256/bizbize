@@ -25,12 +25,14 @@
   color: #eadaff;
   font-weight: 600;
   margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .member-department {
   font-size: 12pt;
   color: #eadaff;
   font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .member-photo-container {
@@ -70,3 +72,4 @@
     ); /* 100% width with some margin on even smaller screens */
   }
 }
+

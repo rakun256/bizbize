@@ -33,12 +33,14 @@
         gap: 0;
         padding: 20px;
         text-align: center;
+        padding-top: 0;
     }
 
     .description-title{
         border: none;
         font-size: 50px;
         width: auto;
+        padding: 0;
     }
 
     .description-right{
