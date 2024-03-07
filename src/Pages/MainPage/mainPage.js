@@ -8,7 +8,7 @@ const MainPage = () => {
       <div className="main-cover">
         <img className="bizbize-logo" src={"Images/bizbize.png"} alt="logo" />
 
-        <div className="container">
+        <div className="main-left-container">
           <h1 className="main-title">
             Biz Bize İle <br /> Kariyerini Zirveye <br /> Taşımaya Hazır Mısın?
           </h1>
