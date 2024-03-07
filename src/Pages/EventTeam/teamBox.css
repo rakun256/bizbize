@@ -1,59 +1,71 @@
 .team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.team-member-container {
+  width: calc(30% - 40px); /* 30% width with some margin */
+  border-radius: 15px;
+  margin: 20px 0;
+  background: linear-gradient(0deg, #d4b8f96b 0%, #eadaff69 100%);
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member-container:hover {
+  transform: scale(1.05);
+}
+
+.member-name {
+  font-size: 18pt;
+  color: #eadaff;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.member-department {
+  font-size: 12pt;
+  color: #eadaff;
+  font-weight: 400;
+}
+
+.member-photo-container {
+  margin-bottom: 10px;
+}
+
+.member-photo {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .team-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   .team-member-container {
-    width: calc(30% - 40px); /* 30% width with some margin */
-    border-radius: 15px;
-    margin: 20px 0;
-    background: linear-gradient(0deg, #d4b8f96b 0%, #eadaff69 100%);
-    padding: 20px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+    width: calc(50% - 40px); /* 50% width with some margin on smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .team-member-container:hover {
-    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .team-member-container {
+    width: calc(
+      100% - 40px
+    ); /* 100% width with some margin on even smaller screens */
   }
-  
-  .member-name {
-    font-size: 18pt;
-    color: #eadaff;
-    font-weight: 600;
-    margin: 10px 0;
-  }
-  
-  .member-department {
-    font-size: 12pt;
-    color: #eadaff;
-    font-weight: 400;
-  }
-  
-  .member-photo-container {
-    margin-bottom: 10px;
-  }
-  
-  .member-photo {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 992px) {
-    .team-member-container {
-      width: calc(50% - 40px); /* 50% width with some margin on smaller screens */
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .team-member-container {
-      width: calc(100% - 40px); /* 100% width with some margin on even smaller screens */
-    }
-  }
-  
+}
