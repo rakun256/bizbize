@@ -4,39 +4,47 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [scrolling, setScrolling] = useState(false);
-  const [navbarColor, setNavbarColor] = useState("transparent"); // Set initial color
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+  const [navbarColor, setNavbarColor] = useState("transparent");
 
-  const handleScroll = () => {
-    if (window.scrollY > 750) {
-      if (!scrolling) {
-        setScrolling(true);
-        setNavbarColor("#06032c"); // Change color when scrolling
+  const handleScrollAndResize = () => {
+    // Dinamik olarak viewport genişliğini güncelle
+    setViewportWidth(window.innerWidth);
+
+    // Navbar rengini ayarla
+    if (viewportWidth > 750) {
+      // Geniş ekran için şeffaf/navbar rengi ayarlamalarını yapabilirsiniz
+      if (window.scrollY > 1000) {
+        setNavbarColor("#06032c");
+      } else {
+        setNavbarColor("transparent");
       }
     } else {
-      if (scrolling) {
-        setScrolling(false);
-        setNavbarColor("transparent"); // Reset to initial color
+      // Daha küçük ekranlar için farklı ayarlamalar yapabilirsiniz
+      if (window.scrollY > 750) {
+        setNavbarColor("#06032c");
+      } else {
+        setNavbarColor("transparent");
       }
     }
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScrollAndResize);
+    window.addEventListener("resize", handleScrollAndResize);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScrollAndResize);
+      window.removeEventListener("resize", handleScrollAndResize);
     };
-  }, [scrolling]);
+  }, [viewportWidth]);
 
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
   return (
-    <div
-      className={`navbar-container ${scrolling ? "scrolling" : ""}`}
-      style={{ backgroundColor: navbarColor }}
-    >
+    <div className="navbar-container" style={{ backgroundColor: navbarColor }}>
       <img alt="logo" src="Images/bizbize.png" onClick={scrollToTop} />
 
       <div className="links">
