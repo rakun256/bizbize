@@ -46,14 +46,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30%;
+    gap: 20vh;
   }
 
   .main-cover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 10vhpx;
   }
 
   .bizbize-logo{
