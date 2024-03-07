@@ -25,6 +25,7 @@
     align-items: center;
     gap: 20px;
     margin-right: 40px;
+    padding: 10px;
   }
   
   .links a {
@@ -32,6 +33,7 @@
     color: #eadaff; /* Link metin rengi */
     transition: color 0.3s ease; /* Renk geçişi efekti */
     font-weight: 650;
+    padding: 10px;
   }
   
   .links a:hover {

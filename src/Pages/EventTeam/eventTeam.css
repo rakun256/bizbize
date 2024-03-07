@@ -23,3 +23,17 @@
     width: max-content;
     margin: auto;
 }
+
+@media only screen and (max-width: 768px){
+  .event-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .member-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
