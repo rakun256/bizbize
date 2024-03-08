@@ -32,13 +32,13 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.guest-name{
+.next-guest-name{
     font-size: 25px;
     font-weight: 600;
     margin-left: 10px;
 }
 
-.guest-pos{
+.next-guest-pos{
     font-size: 15px;
     margin-left: 10px;
 }
@@ -59,7 +59,7 @@
     }
 
     .next-title{
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
     }
 
@@ -68,8 +68,8 @@
     }
 
     .event-poster img{
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
     }
 
     .event-poster{
@@ -83,7 +83,7 @@
         margin-bottom: 0 !important;
     }
 
-    .guest-name{
+    .next-guest-name{
         font-size: 25px;
         font-weight: 600;
         margin-left: 10px;
@@ -92,7 +92,7 @@
         margin-left: 0;
     }
     
-    .guest-pos{
+    .next-guest-pos{
         font-size: 15px;
         margin-left: 10px;
         color: #eadaff;

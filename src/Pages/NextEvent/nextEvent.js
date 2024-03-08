@@ -37,8 +37,8 @@ const NextEvent = () => {
               <img alt="event-poster" src={eventData.photos[0].photoUrl} />
             </div>
             <div className="event-title">
-              <p className="guest-name">{eventData.guestName}</p>
-              <p className="guest-pos">{eventData.title}</p>
+              <p className="next-guest-name">{eventData.guestName}</p>
+              <p className="next-guest-pos">{eventData.title}</p>
             </div>
           </>
         )}
