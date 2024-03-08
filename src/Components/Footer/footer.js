@@ -23,7 +23,7 @@ const Footer = () => {
         
         <div className='footer-bottom'>
             <p className='footer-text'>
-                <a href='https://github.com/rakun256'>Emre Uslu</a>, <a href='https://github.com/alperkyoruk'>Alper Kaan Yörük</a> ve <a href='https://github.com/kuzeysinay'>Kuzey Sınay</a> tarafından yapıldı.
+                SKY LAB Weblab ekip üyeleri <a href='https://github.com/rakun256'>Emre Uslu</a>, <a href='https://github.com/alperkyoruk'>Alper Kaan Yörük</a> ve <a href='https://github.com/kuzeysinay'>Kuzey Sınay</a> tarafından yapıldı.
             </p>
             <p className='footer-year'>2024</p>
         </div>
