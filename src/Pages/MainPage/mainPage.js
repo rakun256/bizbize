@@ -6,7 +6,7 @@ const MainPage = () => {
   return (
     <div className="page-cover" id="main-page">
       <div className="main-cover">
-        <img className="bizbize-logo" src={"Images/bizbize.png"} alt="logo" />
+        <img className="bizbize-logo" src={"Images/bizbize.webp"} alt="logo" />
 
         <div className="main-left-container">
           <h1 className="main-title">
@@ -15,7 +15,7 @@ const MainPage = () => {
           <Button/>
         </div>
       </div>
-      <img className="skylab-logo" src={"Images/skylab1.png"} alt="logo" />
+      <img className="skylab-logo" src={"Images/skylab1.webp"} alt="logo" />
     </div>
   );
 };
