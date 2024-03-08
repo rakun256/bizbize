@@ -50,6 +50,7 @@
 .footer-text a{
     color: white;
     text-decoration: none;
+    padding: 0;
 }
 
 
@@ -57,5 +58,10 @@
     .footer-bottom{
         max-width: 50%;
         text-align: center;
+        height: min-content;
+    }
+
+    .footer-cover{
+        gap: 40px;
     }
 }
