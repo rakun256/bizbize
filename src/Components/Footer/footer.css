@@ -45,10 +45,17 @@
     align-items: center;
     font-size: 13px;
     color: white;
-    padding: 13px;
 }
 
 .footer-text a{
     color: white;
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 768px){
+    .footer-bottom{
+        max-width: 50%;
+        text-align: center;
+    }
 }
