@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container" style={{ backgroundColor: navbarColor }}>
-      <img alt="logo" src="Images/bizbize.png" onClick={scrollToTop} />
+      <img alt="logo" src="Images/bizbize.webp" onClick={scrollToTop} />
 
       <div className="links">
         <Link to="next-event" smooth={true} offset={50} duration={500}>

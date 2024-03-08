@@ -9,8 +9,8 @@ const Footer = () => {
     <div className='footer-cover'>
         <div className='footer-top'>
             <div className='footer-logo-container'>
-                <img alt='bizbize-logo' src='Images/bizbize.png'/>
-                <img alt='sky-lab-logo' src='Images/skylab1.png'/>
+                <img alt='bizbize-logo' src='Images/bizbize.webp'/>
+                <img alt='sky-lab-logo' src='Images/skylab1.webp'/>
             </div>
             <div className='footer-links-icon-container'>
             <a href="https://www.instagram.com/ytuskylab"><FaInstagram className='fa-logo-footer'/></a>

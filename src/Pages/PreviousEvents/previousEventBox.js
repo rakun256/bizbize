@@ -15,7 +15,7 @@ const PreviousEventBox = () => {
       </div>
       
       <div className='date'> 4 Mart 2024 </div>
-      <img className='guest-photo' src={'Images/duygu_colak.png'} alt='Guest'/>
+      <img className='guest-photo' src={'Images/duygu_colak.webp'} alt='Guest'/>
       
     </div>
   )
