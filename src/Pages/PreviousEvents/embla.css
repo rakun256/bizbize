@@ -1,0 +1,113 @@
+/* Add your styles to the existing CSS file (previousEvents.css) or create a new one
+
+
+ */
+  
+
+
+ 
+  .embla__controls {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    gap: 1.2rem;
+    margin-top: 1.8rem;
+    padding-right: 5px;
+  }
+  .embla__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    align-items: center;
+  }
+ 
+ 
+  
+ 
+  .embla__dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+   
+    align-items: center;
+    margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+  }
+  .embla__dot {
+    background-color: blueviolet;
+    -webkit-tap-highlight-color: blueviolet;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .embla__container {
+    align-items: flex-start;
+  }
+  .embla__buttons button {
+    background-color: #d4b8f9;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+  }
+  
+  .embla__buttons button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  
+  .embla__dots button {
+    width: 10px;
+    height: 10px;
+    background-color: #d4b8f9;
+    border: none;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .embla__dots button.embla__dot--selected {
+    background-color: white; 
+    border-style: solid;
+  border-color: #d4b8f9;
+  }
+ 
+  .embla__button__svg {
+    width: 10px;
+    height: 10px;
+  }
+  
+
+  @media only screen and (max-width: 932px) {
+    .embla__controls {
+      width: 280px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      justify-content: space-between;
+      gap: 1.2rem;
+      margin-top: 1.8rem;
+      margin-left: auto;
+      margin-right:auto
+     
+
+    }
+   }

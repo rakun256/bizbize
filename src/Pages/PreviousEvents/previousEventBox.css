@@ -1,5 +1,5 @@
 .prevent-box{
-    max-width: 350;
+    max-width: 350px;
     min-width: 280px;
     border-radius: 15px;
     margin-top: 20px;
@@ -19,7 +19,8 @@
     font-size: 20pt;
     color: black;
     font-weight: 600;
-    margin-left: 0
+    margin-left: 0;
+    z-index: 10;
 }
 .guest-title{
     font-size: 12pt;
@@ -41,8 +42,9 @@
 .guest-photo{
     position: absolute;
     height: 200px;
-    bottom: -45px;
-    right: -10px;
+    bottom: -25px;
+    right: -55px;
+    z-index: 1;
     
 }
 
