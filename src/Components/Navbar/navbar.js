@@ -14,7 +14,7 @@ const Navbar = () => {
     // Navbar rengini ayarla
     if (viewportWidth > 750) {
       // Geniş ekran için şeffaf/navbar rengi ayarlamalarını yapabilirsiniz
-      if (window.scrollY > 1000) {
+      if (window.scrollY > 800) {
         setNavbarColor("#06032c");
       } else {
         setNavbarColor("transparent");
