@@ -20,6 +20,11 @@
     border-radius: 25px;
 }
 
+.event-poster{
+    display: flex;
+    justify-content: center;
+}
+
 .event-poster img{
     height: 300px;
     width: 300px;
@@ -46,6 +51,12 @@
 .next-left{
     display: flex;
     flex-direction: column;
+}
+
+.next-event-date{
+    color: #eadaff;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 @media only screen and (max-width: 768px) {

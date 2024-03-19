@@ -22,6 +22,14 @@ const NextEvent = () => {
     fetchData();
   }, []);
 
+  const formattedDate = countdownTarget.toLocaleDateString('tr-TR', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+
   return (
     <div className="next-event" id="next-event">
       <div className="next-left">
@@ -29,6 +37,9 @@ const NextEvent = () => {
           SIRADAKİ <br /> ETKİNLİĞİMİZ
         </h1>
         {countdownTarget && <Countdown target={countdownTarget} />}
+        <div className="next-event-date">
+          <p>{formattedDate}</p>
+        </div>
       </div>
       <div className="event-cover">
         {eventData && (
