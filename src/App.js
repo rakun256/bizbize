@@ -8,6 +8,7 @@ import OurTeam from "./Pages/EventTeam/eventTeam";
 import EventDescription from "./Pages/EventDescription/eventDescription";
 import Footer from "./Components/Footer/footer";
 
+
 function App() {
   return (
     <BrowserRouter>
