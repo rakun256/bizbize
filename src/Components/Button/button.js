@@ -4,7 +4,7 @@ import './button.css';
 
 const Button = () => {
   return (
-    <a className="ButtonContainer" href="https://forms.office.com/r/6KEewxhZtH" target="_blank" rel="noopener noreferrer">
+    <a className="ButtonContainer" href="https://forms.office.com/r/xidBuHgMwy" target="_blank" rel="noopener noreferrer">
       Kayıt Ol!
     </a>
   );
