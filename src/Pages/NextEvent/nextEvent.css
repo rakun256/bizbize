@@ -38,12 +38,14 @@
 }
 
 .next-guest-name{
+    color: #06032c;
     font-size: 25px;
     font-weight: 600;
     margin-left: 10px;
 }
 
 .next-guest-pos{
+    color: #06032c;
     font-size: 15px;
     margin-left: 10px;
 }
