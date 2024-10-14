@@ -42,7 +42,7 @@ const NextEvent = () => {
       <div className="event-cover">
         {eventData && (
           <>
-            <a href={eventData.linkedin}><div className="event-poster">
+            <a href={eventData.linkedin} target="_blank"><div className="event-poster">
               <img alt="event-poster" src={eventData.photos[0].photoUrl} />
             </div></a>
             <div className="event-title">
