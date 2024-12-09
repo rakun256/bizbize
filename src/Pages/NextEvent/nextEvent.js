@@ -11,7 +11,7 @@ const NextEvent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://api.bin.net.tr:8080/api/events/getActiveEvent?isActive=1");
+        const response = await axios.get("https://apiv1.bin.net.tr:8080/api/events/getActiveEvent?isActive=1");
         setEventData(response.data.data); 
         setCountdownTarget(new Date(response.data.data.date));
       } catch (error) {

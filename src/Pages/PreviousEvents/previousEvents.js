@@ -38,7 +38,7 @@ const PreviousEvents = () => {
     const fetchEventsData = async () => {
       try {
         const response = await axios.get(
-          "https://api.bin.net.tr:8080/api/events/getEvents"
+          "https://apiv1.bin.net.tr:8080/api/events/getEvents"
         );
         setEvents(response.data.data);
       } catch (error) {
