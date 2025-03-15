@@ -54,6 +54,7 @@
   }
   
   .embla__container {
+    display: flex;
     align-items: flex-start;
   }
   .embla__buttons button {
@@ -100,14 +101,16 @@
   @media only screen and (max-width: 932px) {
     .embla__controls {
       width: 280px;
-      display: grid;
-      grid-template-columns: auto 1fr;
-      justify-content: space-between;
-      gap: 1.2rem;
-      margin-top: 1.8rem;
       margin-left: auto;
-      margin-right:auto
-     
-
+      margin-right: auto;
     }
-   }
+  }
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
