@@ -2,8 +2,27 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import "./previousEventBox.css";
 
+// Helper function to parse date from either format
+const parseEventDate = (dateString) => {
+  // Check if the date is in the new format: "DD-MM-YYYY HH:mm"
+  if (dateString.includes('-') && !dateString.includes('T')) {
+    const dateParts = dateString.split(/[\s-:]/);
+    return new Date(
+      parseInt(dateParts[2]), // year
+      parseInt(dateParts[1]) - 1, // month (0-based)
+      parseInt(dateParts[0]), // day
+      parseInt(dateParts[3] || 0), // hour
+      parseInt(dateParts[4] || 0)  // minute
+    );
+  } 
+  // Old format: ISO string "YYYY-MM-DDThh:mm:ss.sssZ"
+  else {
+    return new Date(dateString);
+  }
+};
+
 const PreviousEventBox = ({ event }) => {
-  let eventDate = new Date(event.date);
+  let eventDate = parseEventDate(event.date);
   return (
     <div className='prevent-box'>
       <div className='guest-info'>

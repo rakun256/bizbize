@@ -12,6 +12,25 @@ import {
   PrevButton,
 } from "./EmblaCarouselArrowButtons";
 
+// Helper function to parse date from either format
+const parseEventDate = (dateString) => {
+  // Check if the date is in the new format: "DD-MM-YYYY HH:mm"
+  if (dateString.includes('-') && !dateString.includes('T')) {
+    const dateParts = dateString.split(/[\s-:]/);
+    return new Date(
+      parseInt(dateParts[2]), // year
+      parseInt(dateParts[1]) - 1, // month (0-based)
+      parseInt(dateParts[0]), // day
+      parseInt(dateParts[3] || 0), // hour
+      parseInt(dateParts[4] || 0)  // minute
+    );
+  } 
+  // Old format: ISO string "YYYY-MM-DDThh:mm:ss.sssZ"
+  else {
+    return new Date(dateString);
+  }
+};
+
 // Separate component for year-specific carousel
 const YearCarousel = ({ yearEvents }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()]);
@@ -37,14 +56,14 @@ const PreviousEvents = () => {
     const fetchEventsData = async () => {
       try {
         const response = await axios.get(
-          "https://apiv1.bin.net.tr:8080/api/events/getEvents"
+          "https://api.yildizskylab.com/api/events/getAllBizbizeEvents"
         );
         
         // Group events by academic year
         const grouped = response.data.data
-          .filter(event => event.isActive === 0)
+          .filter(event => event.isActive === false)
           .reduce((acc, event) => {
-            const date = new Date(event.date);
+            const date = parseEventDate(event.date);
             const year = date.getMonth() >= 8 
               ? `${date.getFullYear()}-${date.getFullYear() + 1}`
               : `${date.getFullYear() - 1}-${date.getFullYear()}`;
@@ -58,7 +77,7 @@ const PreviousEvents = () => {
 
         // Sort events within each year
         Object.keys(grouped).forEach(year => {
-          grouped[year].sort((a, b) => new Date(b.date) - new Date(a.date));
+          grouped[year].sort((a, b) => parseEventDate(b.date) - parseEventDate(a.date));
         });
 
         setGroupedEvents(grouped);

@@ -4,7 +4,7 @@ import './eventDescription.css'
 const EventDescription = () => {
   return (
     <div className='description-container' id='description'>
-        <div description-left>
+        <div className='description-left'>
             <h1 className='description-title'>Biz Bize <br/> Nedir?</h1>
         </div>
         <div className='description-right'>

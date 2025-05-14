@@ -9,7 +9,7 @@ const OurTeam = () => {
   useEffect(() => {
     const fetchTeamData = async () => {
       try {
-        const response = await axios.get('https://apiv1.bin.net.tr:8080/api/staff/getStaff');
+        const response = await axios.get('https://api.yildizskylab.com/api/staff/getAllByTenant?tenant=BIZBIZE');
         setTeamData(response.data.data);
       } catch (error) {
         console.error('Error fetching team data:', error);
